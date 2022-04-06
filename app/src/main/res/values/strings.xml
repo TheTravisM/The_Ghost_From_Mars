@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">The Ghost from Mars!</string>
+    <string name="signals_from_mars_title_image">Signals from Mars Title Image</string>
+    <string name="start_your_adventure">Start Your Adventure</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="key_name">name</string>
+</resources>
