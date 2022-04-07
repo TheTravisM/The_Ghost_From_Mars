@@ -1,9 +1,9 @@
-package io.travis.chooseyourownadventure
+package io.travis.chooseyourownadventure.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import io.travis.chooseyourownadventure.R
 
 class StoryActivity : AppCompatActivity() {
 
