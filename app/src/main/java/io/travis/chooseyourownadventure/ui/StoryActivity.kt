@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import io.travis.chooseyourownadventure.R
 
+
 class StoryActivity : AppCompatActivity() {
 
     private val tag: String = StoryActivity::class.java.simpleName
@@ -21,8 +22,6 @@ class StoryActivity : AppCompatActivity() {
         }
 
         Log.d(tag, name)
-
-
 
     }
 }
