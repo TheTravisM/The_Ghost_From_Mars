@@ -11,7 +11,8 @@
         android:theme="@style/Theme.ChooseYourOwnAdventure">
         <activity
             android:name=".ui.StoryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"

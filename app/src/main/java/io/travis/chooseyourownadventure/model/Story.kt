@@ -1,9 +1,11 @@
 package io.travis.chooseyourownadventure.model
 import io.travis.chooseyourownadventure.R
 
-class StoryTwo {
+class Story {
     private val pages: Array<Page?> = arrayOfNulls(7)
+
     fun getPage(pageNumber: Int): Page? {
+        //if (pageNumber >= pages.size) { pageNumber = 0; }
         return pages[pageNumber]
     }
 
