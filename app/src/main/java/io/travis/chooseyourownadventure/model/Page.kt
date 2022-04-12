@@ -3,9 +3,9 @@ package io.travis.chooseyourownadventure.model
 public class Page {
     private var imageId: Int
     private var textId: Int
-    private var choice1: Choice?
-    private var choice2: Choice?
-    private var isFinal: Boolean = false
+    private lateinit var choice1: Choice
+    private lateinit var choice2: Choice
+    private var isFinalPage: Boolean = false
 
     constructor(imageId: Int, textId: Int, choice1: Choice, choice2: Choice) {
         this.imageId = imageId
@@ -17,13 +17,11 @@ public class Page {
     constructor(imageId: Int, textId: Int) {
         this.imageId = imageId
         this.textId = textId
-        choice1 = null
-        choice2 = null
-        isFinal = true
+        isFinalPage = true
     }
 
-    fun isFinal(): Boolean {
-        return isFinal
+    fun isFinalPage(): Boolean {
+        return isFinalPage
     }
 
     fun getImageId(): Int {
@@ -34,11 +32,11 @@ public class Page {
         return textId;
     }
 
-    fun getChoice1(): Choice? {
+    fun getChoice1(): Choice {
         return choice1
     }
 
-    fun getChoice2(): Choice? {
+    fun getChoice2(): Choice {
         return choice2
     }
 }

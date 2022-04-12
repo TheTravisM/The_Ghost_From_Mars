@@ -11,6 +11,8 @@ import io.travis.chooseyourownadventure.R
 
 class MainActivity : AppCompatActivity() {
 
+    private val nameField: EditText? = null;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,9 +25,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, name, Toast.LENGTH_LONG).show()
             startStory(name);
         }
-
         startButton.setOnClickListener(listenerStartButton)
+    }
 
+    override fun onResume() {
+        super.onResume()
+        nameField?.setText("");
     }
 
     private fun startStory(name :String) {
